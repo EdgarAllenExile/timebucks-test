@@ -5,7 +5,6 @@ use Cake\Command\Command;
 use Cake\Console\Arguments;
 use Cake\Console\ConsoleIo;
 use Cake\Http\Client;
-use Cake\Utility\Security;
 
 class FetchAPICommand extends Command
 {

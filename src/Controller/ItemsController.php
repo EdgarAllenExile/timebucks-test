@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Utility\Security;
 
 /**
  * Items Controller
@@ -18,7 +17,6 @@ class ItemsController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-
     public function index()
     {
         $this->set('items', $this->Items->find('all'));

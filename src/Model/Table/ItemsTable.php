@@ -7,7 +7,6 @@ use Cake\ORM\Query\SelectQuery;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-use Cake\Utility\Security;
 
 /**
  * Items Model
@@ -53,6 +52,7 @@ class ItemsTable extends Table
             'foreignKey' => 'item_id',
         ]);
     }
+
     /**
      * Default validation rules.
      *
@@ -65,8 +65,9 @@ class ItemsTable extends Table
             ->notEmptyString('item_id');
 
         $validator
-            ->requirePresence('name', 'create');
-            // ->notEmptyString('name');
+            ->scalar('name')
+            ->requirePresence('name', 'create')
+            ->notEmptyString('name');
 
         $validator
             ->scalar('anchor')
