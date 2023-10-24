@@ -1,4 +1,5 @@
-# Introduction
+# PHP Test Project 1
+## Introduction
 This is a small test project that I completed with the intention of improving my PHP abilities.
 
 This project is a one page application with with no login/signup. If you have any questions please do not hesitate to send me an email.
